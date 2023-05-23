@@ -10,8 +10,11 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 4px solid #f9d7d6;
-  border-radius: 25px;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #ff69b4, rgb(147, 185, 220)) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+  border-radius: 40px;
   padding: 10px 10px;
   margin-top: 10px;
 `;
@@ -49,7 +52,7 @@ const Icon = styled.img`
 const Button = styled.button`
   width: 100px;
   padding: 10px;
-  background-color: #93b9dc ;
+  background-color: #93b9dc;
   color: white;
   border-radius: 25px;
   border: none;
@@ -62,7 +65,7 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="./img./logo.png" />
+          <Logo src="./img/logo.png" />
           <List>
             <ListItem>Home</ListItem>
             <ListItem>Projects</ListItem>

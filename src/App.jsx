@@ -10,8 +10,9 @@ const Container = styled.div`
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
-  color: #442b23;
-  background: linear-gradient(135deg, #ffb8c7, #d39cee, #8eacd0);
+  color: #ff69b4;
+  background-color: #f5f5f5 ;
+  /* background: linear-gradient(135deg, #ffb8c7, #d39cee, #8eacd0); */
   &::-webkit-scrollbar {
     display: none;
   }
