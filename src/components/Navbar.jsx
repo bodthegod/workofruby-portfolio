@@ -10,11 +10,9 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, #ff69b4, rgb(147, 185, 220)) border-box;
   border-radius: 50em;
-  border: 4px solid transparent;
-  border-radius: 40px;
+  border: 4px solid #F4C2C2;
+  border-radius: 25px;
   padding: 10px 10px;
   margin-top: 10px;
 `;
