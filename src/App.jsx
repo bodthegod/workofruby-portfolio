@@ -6,8 +6,16 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 100vh;
-  background-color: purple;
-`
+  scroll-snap-type: y mandatory;
+  scroll-behaviour: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  color: #8eacd0;
+  background: linear-gradient(135deg, #ffb8c7, #d39cee, #8eacd0);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
 
 function App() {
   return (
