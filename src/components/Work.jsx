@@ -1,5 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import ProjectOne from "./ProjectOne";
+import ProjectTwo from "./ProjectTwo";
+import ProjectFour from "./ProjectFour";
+import ProjectThree from "./ProjectThree";
 
 const data = [
   "Brand One",
@@ -57,7 +61,7 @@ const ListItem = styled.li`
 
   &:hover {
     ::after {
-      animation: textAnimation 0.7s cubic-bezier(0.90, -0.22, 0.3, 50) both;
+      animation: textAnimation 0.7s cubic-bezier(0.9, -0.22, 0.3, 50) both;
 
       @keyframes textAnimation {
         from {
@@ -65,7 +69,6 @@ const ListItem = styled.li`
         }
         to {
           width: 100%;
-  
         }
       }
     }
@@ -76,19 +79,28 @@ const Right = styled.div`
 `;
 
 const Work = () => {
+  const [work, setWork] = useState("Project One");
   return (
     <Section>
       <Container>
         <Left>
           <List>
             {data.map((item) => (
-              <ListItem key={item} text={item}>
+              <ListItem key={item} text={item} onClick={() => setWork(item)}>
                 {item}
               </ListItem>
             ))}
           </List>
         </Left>
-        <Right></Right>
+        <Right>
+          {work === "Project one" ? (
+            <ProjectOne />
+          ) : work === "Project Two" ? (
+            <ProjectTwo />
+          ) : (
+            <ProjectThree />
+          )}
+        </Right>
       </Container>
     </Section>
   );

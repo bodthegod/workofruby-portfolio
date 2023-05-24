@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import Icosahedron from "./Icosahedron";
 
 const Section = styled.div`
   height: 100vh;
@@ -69,7 +72,14 @@ const Who = () => {
   return (
     <Section>
       <Container>
-        <LeftTop>{/* 3d model */}</LeftTop>
+        <LeftTop>
+          <Canvas camera={{fov:45, position:[5,5,5]}}>
+            <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={3} />
+            <ambientLight intensity={1} />
+            <directionalLight position={[0, 4, 0]} />
+            <Icosahedron />
+          </Canvas>
+        </LeftTop>
         <RightBottom>
           <Title>Who am I?</Title>
           <MiniAbout>
