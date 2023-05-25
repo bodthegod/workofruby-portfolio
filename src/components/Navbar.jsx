@@ -11,10 +11,12 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   border-radius: 50em;
-  border: 4px solid #F4C2C2;
+  background-color: white;
+  border: 4px solid #ff69b4;
   border-radius: 25px;
   padding: 10px 10px;
   margin-top: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 `;
 const Links = styled.div`
   display: flex;
@@ -23,7 +25,9 @@ const Links = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 50px;
+  height: 100px;
+  width: 125px;
+  margin-left: 10rem;
 `;
 
 const List = styled.ul`
@@ -48,6 +52,7 @@ const Icon = styled.img`
 `;
 
 const Button = styled.button`
+  margin-right: 10rem;
   width: 100px;
   padding: 10px;
   background-color: #93b9dc;
