@@ -6,10 +6,15 @@ import styled from "styled-components";
 
 const Desc = styled.div`
   width: 200px;
-  height: 70px;
+  height: 40px;
   padding: 20px;
-  background-color: #fcd5f5;
-  border-radius: 10px;
+  background-color: rgba(249, 139, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 3px solid rgba(249, 139, 255, 0.3);
+  border-radius: 25px;
   position: absolute;
   top: 100px;
   right: 100px;
