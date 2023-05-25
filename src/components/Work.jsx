@@ -93,9 +93,9 @@ const Work = () => {
           </List>
         </Left>
         <Right>
-          {work === "Project one" ? (
+          {work === "Brand One" ? (
             <ProjectOne />
-          ) : work === "Project Two" ? (
+          ) : work === "Brand Two" ? (
             <ProjectTwo />
           ) : (
             <ProjectThree />
